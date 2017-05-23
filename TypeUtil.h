@@ -9,4 +9,6 @@
 
 #define STDString2NSString(stdStr) [NSString stringWithUTF8String:stdStr.c_str()]
 
+#define STDString2NSData(stdStr) [NSData dataWithBytes:stdStr.data() length:stdStr.size()]]
+
 #define int2NSString(i) [NSString stringWithFormat:@"%d", i]
