@@ -5,18 +5,20 @@
 //  Copyright © 2017 RincLiu. All rights reserved.
 //
 
-#define NSString2STDString(nsStr) std::string([nsStr UTF8String])
+#define NSStr2STDStr(nsStr) std::string([nsStr UTF8String])
 
-#define STDString2NSString(stdStr) [NSString stringWithUTF8String:stdStr.c_str()]
+#define STDStr2NSStr(stdStr) [NSString stringWithUTF8String:stdStr.c_str()]
 
-#define STDString2NSData(stdStr) [NSData dataWithBytes:stdStr.data() length:stdStr.size()]]
+#define STDStr2NSData(stdStr) [NSData dataWithBytes:stdStr.data() length:stdStr.size()]]
 
-#define chars2NSString(chars) [NSString stringWithCString:chars encoding:NSUTF8StringEncoding]
+#define charP2NSStr(charP) [NSString stringWithCString:charP encoding:NSUTF8StringEncoding]
 
-#define chars2NSData(chars) [[NSData alloc] initWithBytes:chars length:strlen(chars)]
+#define charP2NSData(charP) [[NSData alloc] initWithBytes:charP length:strlen(chars)]
 
-#define NSString2NSData(nsStr) [nsStr dataUsingEncoding:NSUTF8StringEncoding]
+#define charV2STDStr(charV) std::string(charV.begin(), charV.end())
 
-#define NSData2NSString(nsData) [[NSString alloc] initWithData:nsData encoding:NSUTF8StringEncoding]
+#define NSStr2NSData(nsStr) [nsStr dataUsingEncoding:NSUTF8StringEncoding]
 
-#define int2NSString(i) [NSString stringWithFormat:@"%d", i]
+#define NSData2NSStr(nsData) [[NSString alloc] initWithData:nsData encoding:NSUTF8StringEncoding]
+
+#define int2NSStr(i) [NSString stringWithFormat:@"%d", i]
