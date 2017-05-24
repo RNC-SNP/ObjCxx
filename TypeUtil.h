@@ -11,4 +11,8 @@
 
 #define STDString2NSData(stdStr) [NSData dataWithBytes:stdStr.data() length:stdStr.size()]]
 
+#define chars2NSString(chars) [NSString stringWithCString:chars encoding:NSUTF8StringEncoding]
+
+#define NSString2NSData(nsStr) [nsStr dataUsingEncoding:NSUTF8StringEncoding]
+
 #define int2NSString(i) [NSString stringWithFormat:@"%d", i]
