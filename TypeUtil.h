@@ -19,6 +19,6 @@
 
 #define NSStr2NSData(nsStr) [nsStr dataUsingEncoding:NSUTF8StringEncoding]
 
-#define NSData2NSStr(nsData) [[NSString alloc] initWithData:nsData encoding:NSUTF8StringEncoding]
+#define NSData2NSStr(nsData) [[NSString alloc] initWithData:nsData encoding:NSASCIIStringEncoding]
 
 #define int2NSStr(i) [NSString stringWithFormat:@"%d", i]
