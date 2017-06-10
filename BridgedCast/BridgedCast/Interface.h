@@ -9,6 +9,6 @@
 #ifndef Interface_h
 #define Interface_h
 
-typedef void (*Interface)(void* obj, int x);
+typedef void (*Callback)(void* obj, int x);
 
 #endif /* Interface_h */

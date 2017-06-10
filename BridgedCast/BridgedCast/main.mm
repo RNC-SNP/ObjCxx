@@ -15,7 +15,7 @@ int main(int argc, const char* argv[]) {
     @autoreleasepool {
         Objc* objc = [[Objc alloc]init];
         void* vp = (__bridge_retained void*)objc;
-        Cxx* cxx = new Cxx(vp, objc.interface);
+        Cxx* cxx = new Cxx(vp, objc.callback);
         cxx->doInCxx(9);
     }
     return 0;

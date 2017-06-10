@@ -16,7 +16,7 @@ void funcObjc(void* obj, int x) {
 
 -(id)init {
     if (self = [super init]) {
-        self.interface = funcObjc;
+        self.callback = funcObjc;
     }
     return self;
 }

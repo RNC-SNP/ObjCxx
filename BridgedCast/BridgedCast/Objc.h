@@ -12,7 +12,7 @@
 
 @interface Objc : NSObject
 
-@property Interface interface;
+@property Callback callback;
 
 -(void)doInObjc:(int)x;
 

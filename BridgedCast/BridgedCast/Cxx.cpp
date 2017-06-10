@@ -7,14 +7,16 @@
 //
 
 #include "Cxx.hpp"
+#include "iostream"
 
-Cxx::Cxx(void* objc, Interface interface) {
+Cxx::Cxx(void* objc, Callback callback) {
     this->objc = objc;
-    this->interface = interface;
+    this->callback = callback;
 }
 
 void Cxx::doInCxx(int x) {
-    this->interface(this->objc, x);
+    std::cout << "doInCxx: " << x << std::endl;
+    this->callback(this->objc, x);
 }
 
 //Cxx::~Cxx() {

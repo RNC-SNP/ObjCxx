@@ -15,10 +15,10 @@
 
 class Cxx {
     void* objc;
-    Interface interface;
+    Callback callback;
 public:
     Cxx();
-    Cxx(void* objc, Interface interface);
+    Cxx(void* objc, Callback callback);
     ~Cxx();
     void doInCxx(int x);
 };
