@@ -1,0 +1,272 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		808ADA9C1EEBD11C0067CB22 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 808ADA9B1EEBD11C0067CB22 /* main.mm */; };
+		808ADAA41EEBD1CC0067CB22 /* Objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 808ADAA31EEBD1CC0067CB22 /* Objc.m */; };
+		808ADAA81EEBD7B20067CB22 /* Cxx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 808ADAA61EEBD7B20067CB22 /* Cxx.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		808ADA961EEBD11C0067CB22 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		808ADA981EEBD11C0067CB22 /* BridgedCast */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BridgedCast; sourceTree = BUILT_PRODUCTS_DIR; };
+		808ADA9B1EEBD11C0067CB22 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		808ADAA21EEBD1CC0067CB22 /* Objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objc.h; sourceTree = "<group>"; };
+		808ADAA31EEBD1CC0067CB22 /* Objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objc.m; sourceTree = "<group>"; };
+		808ADAA61EEBD7B20067CB22 /* Cxx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cxx.cpp; sourceTree = "<group>"; };
+		808ADAA71EEBD7B20067CB22 /* Cxx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Cxx.hpp; sourceTree = "<group>"; };
+		808ADAAB1EEBE5290067CB22 /* Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		808ADA951EEBD11C0067CB22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		808ADA8F1EEBD11C0067CB22 = {
+			isa = PBXGroup;
+			children = (
+				808ADA9A1EEBD11C0067CB22 /* BridgedCast */,
+				808ADA991EEBD11C0067CB22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		808ADA991EEBD11C0067CB22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				808ADA981EEBD11C0067CB22 /* BridgedCast */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		808ADA9A1EEBD11C0067CB22 /* BridgedCast */ = {
+			isa = PBXGroup;
+			children = (
+				808ADAAB1EEBE5290067CB22 /* Interface.h */,
+				808ADAA21EEBD1CC0067CB22 /* Objc.h */,
+				808ADAA31EEBD1CC0067CB22 /* Objc.m */,
+				808ADAA71EEBD7B20067CB22 /* Cxx.hpp */,
+				808ADAA61EEBD7B20067CB22 /* Cxx.cpp */,
+				808ADA9B1EEBD11C0067CB22 /* main.mm */,
+			);
+			path = BridgedCast;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		808ADA971EEBD11C0067CB22 /* BridgedCast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808ADA9F1EEBD11C0067CB22 /* Build configuration list for PBXNativeTarget "BridgedCast" */;
+			buildPhases = (
+				808ADA941EEBD11C0067CB22 /* Sources */,
+				808ADA951EEBD11C0067CB22 /* Frameworks */,
+				808ADA961EEBD11C0067CB22 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BridgedCast;
+			productName = BridgedCast;
+			productReference = 808ADA981EEBD11C0067CB22 /* BridgedCast */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		808ADA901EEBD11C0067CB22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = RINC.XYZ;
+				TargetAttributes = {
+					808ADA971EEBD11C0067CB22 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5TNCWX532Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 808ADA931EEBD11C0067CB22 /* Build configuration list for PBXProject "BridgedCast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 808ADA8F1EEBD11C0067CB22;
+			productRefGroup = 808ADA991EEBD11C0067CB22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808ADA971EEBD11C0067CB22 /* BridgedCast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		808ADA941EEBD11C0067CB22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808ADAA81EEBD7B20067CB22 /* Cxx.cpp in Sources */,
+				808ADA9C1EEBD11C0067CB22 /* main.mm in Sources */,
+				808ADAA41EEBD1CC0067CB22 /* Objc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		808ADA9D1EEBD11C0067CB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		808ADA9E1EEBD11C0067CB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		808ADAA01EEBD11C0067CB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5TNCWX532Z;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		808ADAA11EEBD11C0067CB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5TNCWX532Z;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		808ADA931EEBD11C0067CB22 /* Build configuration list for PBXProject "BridgedCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808ADA9D1EEBD11C0067CB22 /* Debug */,
+				808ADA9E1EEBD11C0067CB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808ADA9F1EEBD11C0067CB22 /* Build configuration list for PBXNativeTarget "BridgedCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808ADAA01EEBD11C0067CB22 /* Debug */,
+				808ADAA11EEBD11C0067CB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 808ADA901EEBD11C0067CB22 /* Project object */;
+}
