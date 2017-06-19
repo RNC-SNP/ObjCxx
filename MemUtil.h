@@ -1,3 +1,10 @@
+//
+//  TypeUtil.h
+//
+//  Created by RincLiu on 19/06/2017.
+//  Copyright © 2017 RincLiu. All rights reserved.
+//
+
 #ifndef MemUtil_h
 #define MemUtil_h
 
