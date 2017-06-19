@@ -5,6 +5,12 @@
 //  Copyright © 2017 RincLiu. All rights reserved.
 //
 
+#define STDStr2Int(str) std::atoi(str.c_str())
+
+#define STDStr2Long(str) std::atol(str.c_str())
+
+#define STDStr2LongLong(str) std::atoll(str.c_str())
+
 #define NSStr2CharP(nsStr) (char*)[nsStr cStringUsingEncoding:NSUTF8StringEncoding]
 
 #define NSStr2STDStr(nsStr) std::string([nsStr cStringUsingEncoding:NSUTF8StringEncoding])
