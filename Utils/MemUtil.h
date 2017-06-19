@@ -8,14 +8,20 @@
 #ifndef MemUtil_h
 #define MemUtil_h
 
-#define MALLOC(type, length) reinterpret_cast<type>(malloc(length))
+#ifdef __cplusplus
+
+#include "cstring"
+#include "cstdlib"
+
+#define MALLOC(type, length) reinterpret_cast<type>(std::malloc(length * sizeof(type)))
 
 Byte* copyBytes(Byte* src, long length);
 
 inline Byte* copyBytes(Byte* src, long length) {
     Byte* bytes = MALLOC(Byte*, length);
-    memcpy(bytes, src, length);
+    std::memcpy(bytes, src, length);
     return bytes;
 }
 
+#endif
 #endif
