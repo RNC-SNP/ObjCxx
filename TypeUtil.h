@@ -11,6 +11,8 @@
 
 #define STDStr2Int(str) std::atoi(str.c_str())
 
+#define STDStr2Float(str) std::atof(str.c_str())
+
 #define STDStr2Long(str) std::atol(str.c_str())
 
 #define STDStr2LongLong(str) std::atoll(str.c_str())
