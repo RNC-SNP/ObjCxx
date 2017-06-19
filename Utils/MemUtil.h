@@ -14,13 +14,6 @@
 #include "cstdlib"
 
 template<typename T>
-T MALLOC(long length);
-
-template<typename T>
-T COPY(T src, long length);
-
-
-template<typename T>
 T MALLOC(long length) {
     return reinterpret_cast<T>(std::malloc(length * sizeof(T)));
 }
