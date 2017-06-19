@@ -25,5 +25,19 @@ inline T COPY(T src, long length) {
     return data;
 }
 
+inline std::string copySTDStrFromNSData(NSData* data) {
+    long size = [data length];
+    Byte* bytes = COPY<Byte*>((Byte*)[data bytes], size);
+    std::string str(reinterpret_cast<char const*>(bytes), size);
+    return str;
+}
+
+inline NSData* copyNSDataFromSTDStr(std::string str) {
+    long size = str.length();
+    Byte* bytes = COPY<Byte*>((Byte*)str.c_str(), size);
+    NSData *data = [NSData dataWithBytes:bytes length:size];
+    return data;
+}
+
 #endif
 #endif
