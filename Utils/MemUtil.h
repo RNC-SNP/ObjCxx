@@ -14,7 +14,7 @@
 #include "cstdlib"
 
 template<typename T>
-T MALLOC(long length) {
+inline T MALLOC(long length) {
     return reinterpret_cast<T>(std::malloc(length * sizeof(T)));
 }
 
