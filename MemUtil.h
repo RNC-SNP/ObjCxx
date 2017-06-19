@@ -1,3 +1,6 @@
+#ifndef MemUtil_h
+#define MemUtil_h
+
 #define MALLOC(type, length) reinterpret_cast<type>(malloc(length))
 
 Byte* copyBytes(Byte* src, long length) {
@@ -5,3 +8,5 @@ Byte* copyBytes(Byte* src, long length) {
     memcpy(bytes, src, length);
     return bytes;
 }
+
+#endif
