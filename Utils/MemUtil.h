@@ -13,14 +13,23 @@
 #include "cstring"
 #include "cstdlib"
 
-#define MALLOC(type, length) reinterpret_cast<type>(std::malloc(length * sizeof(type)))
+template<typename T>
+T MALLOC(long length);
 
-Byte* copyBytes(Byte* src, long length);
+template<typename T>
+T COPY(T src, long length);
 
-inline Byte* copyBytes(Byte* src, long length) {
-    Byte* bytes = MALLOC(Byte*, length);
-    std::memcpy(bytes, src, length);
-    return bytes;
+
+template<typename T>
+T MALLOC(long length) {
+    return reinterpret_cast<T>(std::malloc(length * sizeof(T)));
+}
+
+template<typename T>
+inline T COPY(T src, long length) {
+    T data = MALLOC<T>(length);
+    std::memcpy(data, src, length);
+    return data;
 }
 
 #endif
