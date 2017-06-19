@@ -5,6 +5,10 @@
 //  Copyright © 2017 RincLiu. All rights reserved.
 //
 
+#ifdef __cplusplus
+#include <cstdlib>
+#endif
+
 #define STDStr2Int(str) std::atoi(str.c_str())
 
 #define STDStr2Long(str) std::atol(str.c_str())
