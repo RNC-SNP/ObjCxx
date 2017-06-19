@@ -9,8 +9,8 @@
 #define TypeUtil_h
 
 #ifdef __cplusplus
+
 #include <cstdlib>
-#endif
 
 #define STDStr2Int(str) std::atoi(str.c_str())
 
@@ -38,4 +38,5 @@
 
 #define NSData2NSStr(nsData) [[NSString alloc] initWithData:nsData encoding:NSUTF8StringEncoding]
 
+#endif
 #endif
