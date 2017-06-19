@@ -9,9 +9,10 @@
 #define MemUtil_h
 
 #ifdef __cplusplus
-
 #include "cstring"
 #include "cstdlib"
+#include "string"
+#endif
 
 template<typename T>
 inline T MALLOC(long length) {
@@ -39,5 +40,4 @@ inline NSData* copyNSDataFromSTDStr(std::string str) {
     return data;
 }
 
-#endif
 #endif
