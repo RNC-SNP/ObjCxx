@@ -5,6 +5,9 @@
 //  Copyright © 2017 RincLiu. All rights reserved.
 //
 
+#ifndef TypeUtil_h
+#define TypeUtil_h
+
 #ifdef __cplusplus
 #include <cstdlib>
 #endif
@@ -34,3 +37,5 @@
 #define NSStr2NSData(nsStr) [nsStr dataUsingEncoding:NSUTF8StringEncoding]
 
 #define NSData2NSStr(nsData) [[NSString alloc] initWithData:nsData encoding:NSUTF8StringEncoding]
+
+#endif
