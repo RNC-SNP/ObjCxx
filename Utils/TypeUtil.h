@@ -8,10 +8,6 @@
 #ifndef TypeUtil_h
 #define TypeUtil_h
 
-#ifdef __cplusplus
-#include <cstdlib>
-#endif
-
 #define STDStr2Int(str) std::atoi(str.c_str())
 
 #define STDStr2Float(str) std::atof(str.c_str())
