@@ -8,7 +8,6 @@
 
 #import "RLListener.h"
 #import "IListenerImp.h"
-#import "TypeUtil.h"
 
 @implementation RLListener
 
