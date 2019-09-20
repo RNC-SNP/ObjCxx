@@ -23,10 +23,6 @@
     delete (IListenerImp*)cxx;
 }
 
--(IListenerImp*)imp {
-    return ((IListenerImp*)cxx);
-}
-
 -(void)onDataChanged:(RLData *)data {
 }
 
