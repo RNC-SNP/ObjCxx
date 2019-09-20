@@ -13,11 +13,11 @@
 #include <sstream>
 #include <iomanip>
 
-std::string currentDatetimeStr() {
+std::string currentDatetimeStr(const char* format) {
     auto now = std::chrono::system_clock::now();
-    auto in_time_t = std::chrono::system_clock::to_time_t(now);
+    auto dt = std::chrono::system_clock::to_time_t(now);
     std::stringstream ss;
-    ss << std::put_time(std::localtime(&in_time_t), "%Y-%m-%d %X");
+    ss << std::put_time(std::localtime(&dt), format);
     return ss.str();
 }
 
@@ -29,7 +29,7 @@ Manager::~Manager()  {
 void Manager::work() {
     std::cout << "#CXX# Manager.work()" << std::endl;
     Data* d = new Data();
-    d->text = currentDatetimeStr();
+    d->text = currentDatetimeStr("%Y-%m-%d %X");
     if (this->lis) {
         this->lis->onDataChanged(d);
     }

@@ -28,11 +28,6 @@
 }
 
 -(void)onDataChanged:(RLData *)data {
-    if (data) {
-        Data* d = new Data();
-        d->text = NSStr2STDStr(data.text);
-        [self imp]->onDataChanged(d);
-    }
 }
 
 @end
