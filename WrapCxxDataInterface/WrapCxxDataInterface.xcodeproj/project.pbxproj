@@ -10,7 +10,7 @@
 		808B290623339C0100E0895D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808B290523339C0100E0895D /* main.m */; };
 		808B291523339FEC00E0895D /* Manager.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 808B291423339FEC00E0895D /* Manager.cxx */; };
 		808B291C2333A39C00E0895D /* SDK.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 808B291B2333A39C00E0895D /* SDK.cxx */; };
-		808B29272333AC8500E0895D /* OCxxImp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 808B29242333AC8400E0895D /* OCxxImp.mm */; };
+		808B29272333AC8500E0895D /* OCxxImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 808B29242333AC8400E0895D /* OCxxImp.m */; };
 		808B29282333AC8500E0895D /* OCxxObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 808B29262333AC8500E0895D /* OCxxObj.m */; };
 		808B292B2333ACE100E0895D /* RLData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 808B292A2333ACE100E0895D /* RLData.mm */; };
 		808B292F2333AE1100E0895D /* IListenerImp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 808B292E2333AE1100E0895D /* IListenerImp.mm */; };
@@ -44,7 +44,7 @@
 		808B291B2333A39C00E0895D /* SDK.cxx */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SDK.cxx; sourceTree = "<group>"; };
 		808B291D2333A3EF00E0895D /* Data.hxx */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Data.hxx; sourceTree = "<group>"; };
 		808B29232333AC8400E0895D /* OCxxImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCxxImp.h; sourceTree = "<group>"; };
-		808B29242333AC8400E0895D /* OCxxImp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCxxImp.mm; sourceTree = "<group>"; };
+		808B29242333AC8400E0895D /* OCxxImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCxxImp.m; sourceTree = "<group>"; };
 		808B29252333AC8400E0895D /* OCxxObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCxxObj.h; sourceTree = "<group>"; };
 		808B29262333AC8500E0895D /* OCxxObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCxxObj.m; sourceTree = "<group>"; };
 		808B29292333ACE100E0895D /* RLData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLData.h; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				808B29252333AC8400E0895D /* OCxxObj.h */,
 				808B29262333AC8500E0895D /* OCxxObj.m */,
 				808B29232333AC8400E0895D /* OCxxImp.h */,
-				808B29242333AC8400E0895D /* OCxxImp.mm */,
+				808B29242333AC8400E0895D /* OCxxImp.m */,
 			);
 			path = Ocxx;
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 				808B294323347FE800E0895D /* MyListener.m in Sources */,
 				808B292F2333AE1100E0895D /* IListenerImp.mm in Sources */,
 				808B294023346BAE00E0895D /* Data.cxx in Sources */,
-				808B29272333AC8500E0895D /* OCxxImp.mm in Sources */,
+				808B29272333AC8500E0895D /* OCxxImp.m in Sources */,
 				808B291523339FEC00E0895D /* Manager.cxx in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
