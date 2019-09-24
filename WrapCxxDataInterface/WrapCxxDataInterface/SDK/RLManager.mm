@@ -7,10 +7,10 @@
 //
 
 #import "RLManager.h"
-#import "Manager.hxx"
+#import "IManager.hxx"
 
 @interface RLManager() {
-    Manager* m;
+    IManager* m;
 }
 @end
 
@@ -18,7 +18,7 @@
 
 -(instancetype)initWithCxx:(void*)cxx {
     if (self = [super initWithCxx:cxx]) {
-        m = (Manager*)cxx;
+        m = (IManager*)cxx;
     }
     return self;
 }
