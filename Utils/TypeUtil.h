@@ -26,7 +26,9 @@
 
 #define charP2NSStr(charP) [NSString stringWithCString:charP encoding:NSUTF8StringEncoding]
 
-#define charP2NSData(charP) [[NSData alloc] initWithBytes:charP length:strlen(charP)]
+#define charP2NSDataL(charP,len) [[NSData alloc] initWithBytes:charP length:len]
+
+#define charP2NSData(charP) charP2NSDataL(charP,strlen(charP))
 
 #define charV2STDStr(charV) std::string(charV.begin(), charV.end())
 
